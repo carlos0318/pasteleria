@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patelería Galáctica</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="menu" id="menu">
+      <img src="./imagenes/menu.png" alt="" class="icon-menu" />
+    </div>
+    <header class="header">
+      <div>
+        <nav class="navbar" id="navbar">
+          <a class="btn-menu" href="#">Home</a>
+          <a class="btn-menu" href="#sabores">Sabores</a>
+          <a class="btn-menu" href="#decoraciones">Adornos</a>
+          <a class="btn-menu" href="#comprar">Comprar</a>
+          <a class="btn-menu" href="#contacto">Contacto</a>
+          <a href="./datos.html">Pedios y Almacenamiento</a>
+        </nav>
+      </div>
+      <div class="imagenes">
+        <img
+          src="./imagenes/Pastelería Galáctica.png"
+          alt="logo"
+          class="img-logo"
+        />
+      </div>
+    </header>
+
+    <main>
+      <div id="sabores"></div>
+      <div class="sabores">
+        <h2>Sabores</h2>
+        <section>
+          <article>
+            <h3>Vainilla</h3>
+            <img src="./imagenes/vainilla.png" alt="Bizcocho de vainilla" />
+            <p>$120.00</p>
+          </article>
+          <article>
+            <h3>Chocolate</h3>
+            <img src="./imagenes/chocolate.png" alt="Bizcocho de chocolate" />
+            <p>$120.00</p>
+          </article>
+          <article>
+            <h3>Fresa</h3>
+            <img src="./imagenes/fresa.png" alt="Bizcocho de fresa" />
+            <p>$120.00</p>
+          </article>
+          <article>
+            <h3>Limon</h3>
+            <img src="./imagenes/limon.png" alt="Bizcocho de limón" />
+            <p>$100.00</p>
+          </article>
+        </section>
+      </div>
+
+      <div id="decoraciones"></div>
+      <div class="decoraciones">
+        <h2>Cubiertas y Decoraciones para Pasteles</h2>
+        <section>
+          <article>
+            <h3>Caramelo suave</h3>
+            <img src="./imagenes/caramelo.png" alt="Caramelo suave" />
+            <p>$50.00</p>
+          </article>
+          <article>
+            <h3>Frutas</h3>
+            <img src="./imagenes/frutas.png" alt="Frutas" />
+            <p>$75.00</p>
+          </article>
+          <article>
+            <h3>Fondant</h3>
+            <img src="./imagenes/fondant.png" alt="Fondant" />
+            <p>$90.00</p>
+          </article>
+          <article>
+            <h3>Chantilly</h3>
+            <img src="./imagenes/chantilly.png" alt="Chantilly" />
+            <p>$60.00</p>
+          </article>
+          <article>
+            <h3>Merengue</h3>
+            <img src="./imagenes/merengue.png" alt="Merengue" />
+            <p>$80.00</p>
+          </article>
+        </section>
+      </div>
+
+      <div id="comprar"></div>
+      <div class="comprar">
+        <h2>Comprar pastel</h2>
+        <form action="" class="formulario" onclick="handlePedido()">
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" />
+          <label for="tel">Teléfono</label>
+          <input type="tel" name="tel" id="tel" />
+          <label for="email">Correo Electrónico</label>
+          <input type="email" name="email" id="email" />
+          <label for="descripcion">Descripción general del pastel</label>
+          <textarea
+            name="descripcion"
+            id="descripcion"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <fieldset class="inputs-checkbox">
+            <legend>Sabores</legend>
+            <input type="checkbox" name="sabores" id="vainilla" />
+            <label for="vainilla">Vainilla</label>
+            <input type="checkbox" name="sabores" id="chocolate" />
+            <label for="chocolate">Chocolate</label>
+            <input type="checkbox" name="sabores" id="fresa" />
+            <label for="fresa">Fresa</label>
+            <input type="checkbox" name="sabores" id="limon" />
+            <label for="limon">Limón</label>
+          </fieldset>
+          <fieldset class="inputs-checkbox">
+            <legend>Cubiertas y Decoraciones</legend>
+            <input type="checkbox" name="decoraciones" id="caramelo" />
+            <label for="caramelo">Caramelo Suave</label>
+            <input type="checkbox" name="decoraciones" id="frutas" />
+            <label for="frutas">Frutas</label>
+            <input type="checkbox" name="decoraciones" id="fondant" />
+            <label for="fondant">Fondant</label>
+            <input type="checkbox" name="decoraciones" id="chantilly" />
+            <label for="chantilly">Chantilly</label>
+            <input type="checkbox" name="decoraciones" id="merengue" />
+            <label for="merengue">Merengue</label>
+          </fieldset>
+          <input type="submit" value="Comprar" class="btn-submit" />
+        </form>
+      </div>
+    </main>
+
+    <footer id="contacto">
+      <div class="direccion">
+        <h3>Dirección</h3>
+        <p>Planeta Pastel, Av. marcianos</p>
+      </div>
+      <div class="telefonos">
+        <h3>Teléfonos</h3>
+        <p>8132620191</p>
+        <p>2148132620</p>
+      </div>
+      <div class="atencion">
+        <h3>Horarios de atención</h3>
+        <p>Lunes a Viernes de 10am a 6pm</p>
+        <p>Sabado y Domingo de 10am a 3pm</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

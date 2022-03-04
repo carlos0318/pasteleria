@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    height: 50px;
+    background-color: #f1f1f1;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.imagenes {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo {
+    width: 550px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section article {
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    text-align: center;
+}
+
+section article h3 {
+    font-size: 25px;
+    color: #2e2e2e;
+}
+
+section article p {
+    font-size: 17px;
+    color: #52bea4;
+}
+
+section article img {
+    width: 250px;
+    height: 250px;
+    margin: 20px 0;
+}
+
+#sabores,
+#decoraciones,
+#comprar,
+#cantidad,
+#pedidos {
+    width: 100%;
+    height: 50px;
+}
+
+.comprar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input {
+    margin: 10px 0;
+}
+
+.inputs-checkbox {
+    text-align: center;
+}
+
+.inputs-checkbox label {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.inputs-checkbox input {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.btn-submit {
+    background-color: #e7e7e7;
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contacto {
+    height: 100%;
+    padding: 20px;
+    background-color: #000;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contacto div h3 {
+    margin: 20px 0;
+}
+
+#contacto div p {
+    margin: 10px 0;
+}
+
+.icon-menu {
+    display: none;
+    position: fixed;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 25px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar.active {
+    display: flex;
+}
+
+.pedidos, .cantidad-sabores, .cantidad-adornos {
+    margin-bottom: 100px;
+}
+
+.pedidos article, .cantidad-sabores article, .cantidad-adornos article {
+    margin: 75px;
+}
+
+@media (max-width: 1024px) {
+    .img-logo {
+        width: 435px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .icon-menu {
+        display: flex;
+    }
+}
