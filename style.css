@@ -22,7 +22,7 @@ h2 {
     top: 0;
     overflow: hidden;
     height: 50px;
-    background-color: #f1f1f1;
+    background-color: #fdfd96;
     width: 100%;
     z-index: 100;
 }
@@ -55,12 +55,11 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 section article {
-    width: 250px;
-    height: 250px;
-    margin: 50px;
+    margin: 70px;
     text-align: center;
 }
 
@@ -70,14 +69,34 @@ section article h3 {
 }
 
 section article p {
-    font-size: 17px;
+    font-size: 18px;
     color: #52bea4;
+}
+
+.cantidades {
+    font-weight: lighter;
+    font-size: 20px;
 }
 
 section article img {
     width: 250px;
     height: 250px;
     margin: 20px 0;
+    border-radius: 50%;
+}
+
+.sabores-adornos {
+    display: flex;
+}
+
+.sabores-adornos article div {
+    align-items: center;
+    display: flex;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
 }
 
 #sabores,
@@ -122,7 +141,7 @@ section article img {
 }
 
 .btn-submit {
-    background-color: #e7e7e7;
+    background-color: #fdfd96;
     color: black;
     border: none;
     padding: 15px 32px;
@@ -186,6 +205,10 @@ section article img {
         display: none;
         flex-direction: column;
         height: 100%;
+    }
+
+    .sabores-adornos {
+        flex-wrap: wrap;
     }
 
     .navbar a {

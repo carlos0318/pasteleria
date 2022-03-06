@@ -40,22 +40,34 @@
           <article>
             <h3>Vainilla</h3>
             <img src="./imagenes/vainilla.png" alt="Bizcocho de vainilla" />
-            <p>$120.00</p>
+            <div>
+              <label class="cantidades">Precio: </label>
+              <p>$120.00</p>
+            </div>
           </article>
           <article>
             <h3>Chocolate</h3>
             <img src="./imagenes/chocolate.png" alt="Bizcocho de chocolate" />
-            <p>$120.00</p>
+            <div>
+              <label class="cantidades">Precio: </label>
+              <p>$120.00</p>
+            </div>
           </article>
           <article>
             <h3>Fresa</h3>
             <img src="./imagenes/fresa.png" alt="Bizcocho de fresa" />
-            <p>$120.00</p>
+            <div>
+              <label class="cantidades">Precio: </label>
+              <p>$120.00</p>
+            </div>
           </article>
           <article>
             <h3>Limon</h3>
             <img src="./imagenes/limon.png" alt="Bizcocho de limón" />
-            <p>$100.00</p>
+            <div>
+              <label class="cantidades">Precio: </label>
+              <p>$100.00</p>
+            </div>
           </article>
         </section>
       </div>
@@ -67,27 +79,42 @@
           <article>
             <h3>Caramelo suave</h3>
             <img src="./imagenes/caramelo.png" alt="Caramelo suave" />
-            <p>$50.00</p>
+            <div>
+              <label class="cantidades">Precio: </label>
+              <p>$50.00</p>
+            </div>
           </article>
           <article>
             <h3>Frutas</h3>
             <img src="./imagenes/frutas.png" alt="Frutas" />
-            <p>$75.00</p>
+            <div>
+              <label class="cantidades">Precio: </label>
+              <p>$75.00</p>
+            </div>
           </article>
           <article>
             <h3>Fondant</h3>
             <img src="./imagenes/fondant.png" alt="Fondant" />
-            <p>$90.00</p>
+            <div>
+              <label class="cantidades">Precio: </label>
+              <p>$90.00</p>
+            </div>
           </article>
           <article>
             <h3>Chantilly</h3>
             <img src="./imagenes/chantilly.png" alt="Chantilly" />
-            <p>$60.00</p>
+            <div>
+              <label class="cantidades">Precio: </label>
+              <p>$60.00</p>
+            </div>
           </article>
           <article>
             <h3>Merengue</h3>
             <img src="./imagenes/merengue.png" alt="Merengue" />
-            <p>$80.00</p>
+            <div>
+              <label class="cantidades">Precio: </label>
+              <p>$80.00</p>
+            </div>
           </article>
         </section>
       </div>
@@ -95,7 +122,7 @@
       <div id="comprar"></div>
       <div class="comprar">
         <h2>Comprar pastel</h2>
-        <form action="" class="formulario" onclick="handlePedido()">
+        <form action="" class="formulario" onsubmit="handlePedido(event)">
           <label for="name">Nombre</label>
           <input type="text" name="name" id="name" />
           <label for="tel">Teléfono</label>
@@ -111,26 +138,26 @@
           ></textarea>
           <fieldset class="inputs-checkbox">
             <legend>Sabores</legend>
-            <input type="checkbox" name="sabores" id="vainilla" />
+            <input type="checkbox" name="sabores" value="vainilla" id="vainilla" />
             <label for="vainilla">Vainilla</label>
-            <input type="checkbox" name="sabores" id="chocolate" />
+            <input type="checkbox" name="sabores" value="chocolate" id="chocolate" />
             <label for="chocolate">Chocolate</label>
-            <input type="checkbox" name="sabores" id="fresa" />
+            <input type="checkbox" name="sabores" value="fresa" id="fresa" />
             <label for="fresa">Fresa</label>
-            <input type="checkbox" name="sabores" id="limon" />
+            <input type="checkbox" name="sabores" value="limon" id="limon" />
             <label for="limon">Limón</label>
           </fieldset>
           <fieldset class="inputs-checkbox">
             <legend>Cubiertas y Decoraciones</legend>
-            <input type="checkbox" name="decoraciones" id="caramelo" />
+            <input type="checkbox" name="decoraciones" value="caramelo" id="caramelo" />
             <label for="caramelo">Caramelo Suave</label>
-            <input type="checkbox" name="decoraciones" id="frutas" />
+            <input type="checkbox" name="decoraciones" value="frutas" id="frutas" />
             <label for="frutas">Frutas</label>
-            <input type="checkbox" name="decoraciones" id="fondant" />
+            <input type="checkbox" name="decoraciones" value="fondant" id="fondant" />
             <label for="fondant">Fondant</label>
-            <input type="checkbox" name="decoraciones" id="chantilly" />
+            <input type="checkbox" name="decoraciones" value="chantilly" id="chantilly" />
             <label for="chantilly">Chantilly</label>
-            <input type="checkbox" name="decoraciones" id="merengue" />
+            <input type="checkbox" name="decoraciones" value="merengue" id="merengue" />
             <label for="merengue">Merengue</label>
           </fieldset>
           <input type="submit" value="Comprar" class="btn-submit" />
